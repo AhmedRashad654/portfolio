@@ -58,8 +58,8 @@ body::-webkit-scrollbar-thumb {
   content: "";
   position: absolute;
   inset: 0;
-  left: -4px;
-  top: -4px;
+  left: -8px;
+  top: -8px;
   width: 208px;
   height: 208px;
   border-radius: 50%;
