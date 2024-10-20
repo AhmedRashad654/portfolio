@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+body {
+  @apply bg-backgroundBlack text-white;
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dapsxrdb3/image/upload/v1729437871/portfolio/sz7d03pxaavkqmslekyp.png");
+  filter: blur(5px);
+  background-size: cover;
+}
+
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #3dcf3d;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #3dcf3d;
+}
+/* start class active */
+.active {
+  color: #00ff00;
+  transition: all 0.3s;
+}
+.active1 {
+  color: #00ff00;
+  transition: all 0.1s;
+}
+/* end class active */
+/* start image in header */
+.image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -4px;
+  width: 208px;
+  height: 208px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #000000 0%, #22c55e 50%, #ffffff 100%);
+  z-index: -10;
+}
+.image-container::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #000000 0%, #22c55e 50%, #ffffff 100%);
+  border-radius: 50%;
+  filter: blur(45px);
+  animation: rotateBlur 3s infinite;
+}
+
+/* end image in header */
+/*start button-header */
+.button-container {
+  position: relative;
+  overflow: hidden;
+  transition: width 0.5s all ease;
+  color: #22c55e;
+}
+.button-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(141, 37%, 60%, 0.8);
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.5s all;
+}
+.button-container:hover::after {
+  width: 100%;
+}
+.button-container:hover {
+  color: white;
+}
+/* end button-header */
+/* start pointer in services */
+.pointer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #000000 0%, #22c55e 50%, #ffffff 50%);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+/* end pointer in services */
+
+/* start animate */
+@keyframes rotateBlur {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* end animate */
+/* start skills */
+.afterFrontBack {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(-45deg, #000000 0%, #22c55e 50%, #ffffff 50%);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+/* end skills */
+/* start slider */
+.aspect-ratio-box {
+  aspect-ratio: 16 / 7;
+  width: 100%;
+  overflow: hidden;
+}
+/* end slider */
