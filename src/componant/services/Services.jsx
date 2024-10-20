@@ -11,7 +11,7 @@ export default function Services({ setLiActive }) {
   }, [isInView, setLiActive]);
   return (
     <motion.div
-      className="mt-28 min-h-[90vh] pl-5 overflow-x-hidden"
+      className="mt-28 pl-5 overflow-x-hidden"
       id="Services"
       ref={ref}
     >
@@ -26,9 +26,9 @@ export default function Services({ setLiActive }) {
       >
         Services
       </motion.div>
-      <motion.div className="flex md:justify-center">
-        <div className="w-[2px] h-[69vh] mt-12 bg-veryGreen flex flex-col justify-around">
-          <div className="relative ">
+      <motion.div className="flex mdd:justify-center">
+        <div className="w-[2px] h-[450px] mt-12 bg-veryGreen flex flex-col justify-around">
+          <div className="relative">
             <div className="w-7 h-7 rounded-full bg-veryGreen -ml-3 pointer relative z-20"></div>
             <BlockService
               title={"Front End Developer"}
@@ -55,7 +55,7 @@ export default function Services({ setLiActive }) {
             <BlockService
               title={"Full Stack Developer"}
               description={
-                "Creating complete web applications, integrating both front-end and back-end technologies ."
+                "Creating complete web applications, integrating both front-end and back-end."
               }
               direction="right"
               delay={0.9}

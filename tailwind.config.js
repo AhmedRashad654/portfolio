@@ -16,6 +16,11 @@ module.exports = {
         xsmlmFont:{min:"100px",max:"500px"},
         smmm: { min: "500px", max: "767px" },
         smmmm: { min: "1000px", max: "2000px" },
+        mdd:{min:"769px",max:"50000px"},
+        mdd2:{min:"600px",max:"769px"},
+        mdd3:{min:"769px",max:"1000px"}
+
+
       },
     },
   },

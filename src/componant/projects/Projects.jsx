@@ -15,7 +15,7 @@ export default function Projects({ setLiActive }) {
   }, [isInView, setLiActive]);
   return (
     <motion.div
-      className={`mt-28 min-h-[80vh] overflow-x-hidden`}
+      className={`mt-28 overflow-x-hidden`}
       id="Projects"
       ref={ref}
     >

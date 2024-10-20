@@ -13,9 +13,9 @@ export default function Header({ liAclive, setLiActive }) {
     }
   }, [isInView, setLiActive]);
   return (
-    <div ref={ref} id="Home" className="section-header">
+    <div ref={ref} id="Home" className="over-flow-x-hidden">
       <Navbar liAclive={liAclive} setLiActive={setLiActive} />
-      <div className="flex flex-col items-center justify-center md:gap-0 gap-5 pt-5 h-[85vh]">
+      <div className="flex flex-col items-center justify-center md:gap-0 gap-5 pt-5 section-header">
         <Image />
         <Text />
       </div>

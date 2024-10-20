@@ -9,7 +9,7 @@ export default function BlockService({ title, description, direction, delay }) {
         direction === "right" && "left-6"
       } ${
         direction === "left" && "md:right-6 smm:left-6"
-      } border-2  border-veryGreen smmm:w-[400px] w-[290px] smmmm:w-[410px] xsmlm:w-[265px]`}
+      } border-2  border-veryGreen smmm:w-[400px] w-[290px] mdd3:w-[310px] smmmm:w-[410px] xsmlm:w-[265px] mdd2:w-[400px]`}
       initial={
         direction === "right"
           ? { x: 50, opacity: 0 }
