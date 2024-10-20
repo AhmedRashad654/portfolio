@@ -13,7 +13,7 @@ export default function Skills({ setLiActive }) {
   }, [isInView, setLiActive]);
   return (
     <motion.div
-      className="mt-28 pl-5 min-h-[80vh]"
+      className="mt-28 min-h-[80vh]"
       id="Skills"
       ref={ref}
     >
