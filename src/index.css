@@ -20,7 +20,6 @@ body::before {
   background-size: cover;
 }
 
-
 body::-webkit-scrollbar {
   width: 3px;
 }
@@ -54,14 +53,15 @@ body::-webkit-scrollbar-thumb {
 }
 /* end class active */
 /* start image in header */
+.image-container img{
+  border: 2px solid #22c55e;
+}
 .image-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  left: -8px;
-  top: -8px;
-  width: 208px;
-  height: 208px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(-45deg, #000000 0%, #22c55e 50%, #ffffff 100%);
   z-index: -10;
